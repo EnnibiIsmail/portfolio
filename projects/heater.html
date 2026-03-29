@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substrate Heater | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <div class="brand"><a href="../index.html">ISMAIL ENNIBI</a></div>
+            <div class="nav-links">
+                <a href="../index.html">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">Substrate Heater</h1>
+            <p class="hero-subtitle">Hardware conception for advanced material science instrumentation.</p>
+        </header>
+
+        <div class="hero-image-box">
+            <img src="../media/heater_p17.jpeg" alt="Substrate Heater Hardware">
+        </div>
+
+        <div class="meta-grid">
+            <div><span class="meta-label">Role</span><span class="meta-value">R&D Engineer</span></div>
+            <div><span class="meta-label">Lab</span><span class="meta-value">Morningside NanoFab / Hacker Foundry</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Hardware, Thermal Dynamics</span></div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">01. The PLD Objective</div>
+            <div class="section-text">
+                <p>This project was initiated with the greater goal of achieving Pulsed Laser Deposition (PLD). Working with the Hacker Foundry, our objective was to build a low-cost tool to deposit thin films with variable tunability.</p>
+                <p>In order to achieve PLD, high temperatures are required at the substrate to ensure good crystallization and high nucleation density of the produced films. While target temperatures for most PLD processes can reach up to 1000°C, we set our initial proof-of-concept goal at 800°C for this custom heater.</p>
+            </div>
+        </section>
+
+        <div class="hardware-box">
+            <div>
+                <img src="../media/heater_p8.jpg" alt="Initial Prototype" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">02. Initial Prototype & Limitations</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Our initial design proved the concept but revealed critical thermal and electrical bottlenecks. On the positive side, the electric feed-through design was highly effective with a very low voltage drop, and the KF body maintained vacuum integrity perfectly. 
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    However, the delrin components did not react well to the high temperatures once the graphite core reached 400°C. Furthermore, the overall voltage load wasn’t adequately concentrated on the graphite; even after adjusting the radius-to-thickness ratio, the graphite wasn’t dropping enough voltage to scale our temperatures higher.
+                </p>
+                <span class="hardware-tag">Max Temp: 400°C (V1)</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="flex-direction: row-reverse;">
+            <div>
+                <img src="../media/heater_p13.jpg" alt="Upgraded Power and Feedthroughs" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">03. Electrical Overhaul</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    To reach 800°C, a new solution was needed. First, we lowered the overall system resistance to maximize power dissipation at the graphite. We recycled a 4-port electric feedthrough and joined two ports together, increasing the cross-sectional area and successfully dropping the resistance.
+                </p>
+                <p class="section-text">
+                    Second, we needed significantly more current. We built a custom high-current power supply using second-hand components, pairing a variac with a high-power transformer. By modifying the transformer winding to a 1:26 ratio, we were able to provide the optimal power required by the graphite core.
+                </p>
+            </div>
+        </div>
+
+        <section class="content-section" style="margin-top: 2rem;">
+            <div class="section-title">04. Mechanical Integration</div>
+            <div class="section-text">
+                <p>To finalize the assembly, a custom CF to KF adaptor was machined to position the graphite heating piece at the optimal distance from the target holder. Based on PLD literature, we calibrated this target-to-substrate distance to precisely 50 mm for maximum deposition efficiency.</p>
+            </div>
+        </section>
+
+        <section class="image-grid">
+            <div class="image-card" style="padding: 0;">
+                <img src="../media/heater_p18.jpeg" alt="Final Assembly" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="image-card" style="padding: 0;">
+                <img src="../media/heater_p15.jpeg" alt="Testing Phase" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </section>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>

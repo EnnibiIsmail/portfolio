@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Efficient Photolithography | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <div class="brand"><a href="../index.html">ISMAIL ENNIBI</a></div>
+            <div class="nav-links">
+                <a href="../index.html">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">Cost-Efficient Photolithography</h1>
+            <p class="hero-subtitle">Opto-mechanical engineering and dynamic autofocus for maker-scale microfabrication.</p>
+        </header>
+
+        <div class="hero-image-box">
+            <img src="../media/litho_p1.png" alt="Lithography System Assembly">
+        </div>
+
+        <div class="meta-grid">
+            <div><span class="meta-label">Role</span><span class="meta-value">Mechanical Engineering Lead</span></div>
+            <div><span class="meta-label">Project</span><span class="meta-value">ME/EE Senior Design (2025/26)</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Opto-Mechanics, Autofocus</span></div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">01. Open-Source Nanofabrication</div>
+            <div class="section-text">
+                <p>For my Senior Design capstone, my team and I are developing a cost-efficient photolithography system. The primary objective is to build a university- and maker-scale lithography machine that pushes the performance boundaries of current DIY builds while remaining open-source and reproducible.</p>
+                <p>As the mechanical lead, my work focuses primarily on designing the rigid mechanical components, integrating the complex optical assembly, and engineering the dynamic autofocus mechanism required to achieve sub-micron resolution.</p>
+            </div>
+        </section>
+
+        <div class="hardware-box">
+            <div>
+                    <img src="../media/litho_p2.png" alt="Custom Laser Mounts CAD" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">02. Custom Opto-Mechanics</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Maintaining absolute rigidity in the optical train is critical. To ensure the 402 nm UV patterning laser and the 540 nm red alignment laser remain perfectly co-linear, I designed and fabricated custom mechanical housings, laser mounts, and holders.
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    These custom fixtures secure the optics to the breadboard, minimizing vibrational noise and thermal drift. By structurally isolating the beam path leading into the mirror galvanometer, the system maintains the exact tolerances required to reliably scan the light across the vacuum chuck.
+                </p>
+                <span class="hardware-tag">CAD Design</span>
+                <span class="hardware-tag">Vibration Isolation</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="flex-direction: row-reverse;">
+            <div>
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=1000" alt="Optiland Ray Simulation" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">03. The Optical Assembly</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Before physically assembling the optics, I conducted ray simulations using Optiland (with further refinement in Zemax) to predict aberrations and estimate optimal lens positioning.
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    The physical assembly incorporates a 4F optical system paired with a microscope objective. This configuration acts as a high-precision beam expander, effectively lowering the diffraction limit of the system to accurately project nanoscale features onto the photoresist.
+                </p>
+                <span class="hardware-tag">Optiland / Zemax</span>
+                <span class="hardware-tag">4F Optical System</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="margin-top: 4rem;">
+            <div>
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000" alt="Voice Coil Motor Integration" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">04. Dynamic Autofocus System</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    To account for microscopic wafer unevenness during scanning, I engineered a dynamic autofocus mechanism. The system incorporates a camera feed analyzed by a Raspberry Pi using computer vision to continuously assess beam sharpness.
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    This software loop triggers a Voice Coil Motor (VCM) that physically translates the objective lens. By mechanically actuating the optics in real-time, the system locks in a sharp focus across the entire substrate, which we systematically quantify using a 1951 USAF resolution test chart.
+                </p>
+                <span class="hardware-tag">Feedback Control</span>
+                <span class="hardware-tag">Computer Vision</span>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>

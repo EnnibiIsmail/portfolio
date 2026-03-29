@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHEED Electron Gun | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <div class="brand"><a href="../index.html">ISMAIL ENNIBI</a></div>
+            <div class="nav-links">
+                <a href="../index.html">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">RHEED Setup</h1>
+            <p class="hero-subtitle">Reflection High Energy Electron Diffraction instrumentation.</p>
+        </header>
+
+        <div class="hero-image-box">
+            <img src="../media/egun_p2.png" alt="Electron Beam Simulation">
+        </div>
+
+        <div class="meta-grid">
+            <div><span class="meta-label">Role</span><span class="meta-value">R&D Engineer</span></div>
+            <div><span class="meta-label">Lab</span><span class="meta-value">Morningside NanoFab</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Hardware Engineering</span></div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">01. Surface Characterization</div>
+            <div class="section-text">
+                <p>The initial motivation for the electron gun was to be able to analyze samples grown by our group. While conducting further research, we realized how remarkably wide the applications of this device could be.</p>
+                <p>Most characterization techniques that use electron scattering require electron acceleration, which fundamentally relies on a high-performing electron gun. This core technology powers Scanning Electron Microscopes (SEMs), Transmission Electron Microscopes (TEMs), Electron Back-Scattered Diffraction (EBSD), and Reflection High Energy Electron Diffraction (RHEED)[cite: 2, 8].</p>
+            </div>
+        </section>
+
+        <div class="hardware-box">
+            <div>
+                <figure style="margin: 0;">
+                    <img src="../media/egun_p3.png" alt="Thermionic Gun Schematic and Simulation" style="width: 100%; height: auto; object-fit: contain; aspect-ratio: 4/3; background-color: white; padding: 1rem;">
+                    
+                    <figcaption style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-dark); font-family: var(--sans); line-height: 1.4; letter-spacing: 0.03em;">
+                        Schematic representation of thermionic emission and field pinching taken from "Measurement Methods | Structural and Chemical Properties: Scanning Electron Microscopy" (R. Marassi and F. Nobili). The article can be found <a href="https://www-sciencedirect-com.ezproxy.cul.columbia.edu/science/chapter/referencework/pii/B978044452745500071X?fr=RR-2&ref=pdf_download&rr=9e0d45bc3a20c094" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline; transition: color 0.3s ease;">here</a>.
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">02. Thermionic Emission</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    The system is composed of a thermionic electron source, a Wehnelt cylinder, a grounded anode, an einzel lens, and a scintillator[cite: 14, 15]. Our current setup accelerates electrons through a -1kV potential difference at a vacuum level of about 0.5 × 10<sup>-4</sup> Torrs[cite: 10].
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    The Wehnelt cylinder is biased with respect to the cathode by about 40V to allow for a pinching of the electric field, acting as a pinhole to focus the emitted electrons[cite: 15, 16]. The massive potential difference between the cathode (at negative high voltage) and the anode (at ground) is what rapidly accelerates the electrons down the column[cite: 15].
+                </p>
+                <span class="hardware-tag">Acceleration: -1kV</span>
+                <span class="hardware-tag">Vacuum: 0.5 × 10<sup>-4</sup> Torr</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="flex-direction: row-reverse;">
+            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-dark);">
+                <video style="width: 100%; max-height: 400px; object-fit: cover;" controls muted>
+                    <source src="../media/egun_v1.mp4" type="video/mp4">
+                    Video not supported.
+                </video>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">03. Electron Optics</h3>
+                <p class="section-text">
+                    To properly guide the beam, we utilize an einzel lens—a 3-stage electrostatic system where the center stage holds a negative voltage while the outer two stages remain grounded. This configuration produces an electric field that converges the electrons to a focal point before they diverge again, behaving precisely like a traditional optical convex lens[cite: 41].
+                </p>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>

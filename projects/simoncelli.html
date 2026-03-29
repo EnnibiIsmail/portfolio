@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simoncelli Group | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <div class="nav-links">
+                <a href="../index.html" class="active">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">Simoncelli Group</h1>
+            <p class="hero-subtitle">
+                Simulating viscous heat transfer in extreme thermal conductors through tailored geometries and boundary conditions.
+            </p>
+        </header>
+
+        <div style="margin-bottom: 4rem; width: 100%; background-color: var(--bg-surface); aspect-ratio: 14 / 9;" class="hero-image-box">
+            <img src="../media/simoncelli.png" alt="Heat Transfer Simulation Abstract" class="center-fit" style="display: block; width: 100%; height: auto; object-fit: cover;">
+        </div>
+
+        <div class="meta-grid">
+            <div>
+                <span class="meta-label">Role</span>
+                <span class="meta-value">Undergraduate Researcher</span>
+            </div>
+            <div>
+                <span class="meta-label">Timeline</span>
+                <span class="meta-value">October 2025 – Present</span>
+            </div>
+            <div>
+                <span class="meta-label">Collaborators</span>
+                <span class="meta-value">University of Michigan</span>
+            </div>
+            <div>
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">VHE Simulations, Boundary Dynamics</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="background-color: transparent; padding: 0; gap: 4rem; margin-bottom: 6rem;">
+            <div style="flex: 1;">
+                <div class="section-title" style="margin-bottom: 1.5rem;">01. Viscous Heat Equations</div>
+                <div class="section-text">
+                    <p style="margin-bottom: 1.5rem;">My work builds upon the theoretical framework of the Viscous Heat Equations (VHE), a generalization of Fourier's law that captures hydrodynamic phonon transport. In extreme thermal conductors like graphite, heat can flow much like a viscous fluid.</p>
+                    <p>A critical variable in these simulations is temperature dependence. The transition between diffusive and hydrodynamic regimes is highly sensitive to the operating temperature (typically within the cryogenic 60–100 K range). I analyze how thermal viscosity and phonon scattering rates evolve across these temperature gradients, fundamentally altering the material's thermal dissipation.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <span class="hardware-tag">Thermal Hydrodynamics</span>
+                    <span class="hardware-tag">Temperature Dependence</span>
+                </div>
+            </div>
+
+
+            <div style="flex: 1; background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <figure style="margin: 0;">
+                    <img src="../media/simoncelli_p2.png" alt="VHE" style="width: 100%; height: auto; object-fit: contain; margin-bottom: 1rem;">
+                    
+                    <figcaption style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-dark); font-family: var(--sans); line-height: 1.4; letter-spacing: 0.03em;">
+                        Viscous Heat Equations taken from "Viscous heat backflow and temperature resonances in extreme thermal conductors" (Jan Dragašević, Bogdan Rajkov, and Michele Simoncelli) <a href="https://arxiv.org/pdf/2303.12777" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline; transition: color 0.3s ease;">here</a>.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="background-color: transparent; padding: 0; gap: 4rem; margin-bottom: 6rem; flex-direction: row-reverse;">
+            <div style="flex: 1;">
+                <div class="section-title" style="margin-bottom: 1.5rem;">02. Geometry & Boundaries</div>
+                <div class="section-text">
+                    <p style="margin-bottom: 1.5rem;">In the hydrodynamic regime, the macroscopic geometry of a device—and the physical boundary conditions (BCs) at its edges—dictate thermal flow just as pipe geometry dictates fluid flow. My research focuses on simulating how specific geometric constraints induce non-diffusive phenomena, such as steady-state heat vortices and viscous heat backflow.</p>
+                    <p>In collaboration with experimentalists at the University of Michigan, I model various boundary conditions, paying special attention to slip/lubrication dynamics at the interfaces. By fine-tuning these BCs and geometric parameters, we can theoretically amplify temperature resonances and actively control heat hydrodynamics in physical devices.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <span class="hardware-tag">Device Geometry</span>
+                    <span class="hardware-tag">Slip Boundary Conditions</span>
+                </div>
+            </div>
+            <div style="flex: 1; background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <figure style="margin: 0;">
+                    <img src="../media/simoncelli_p1.png" alt="Boundary Condition Simulation" style="width: 100%; height: auto; object-fit: contain; margin-bottom: 1rem;">
+                    
+                    <figcaption style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-dark); font-family: var(--sans); line-height: 1.4; letter-spacing: 0.03em;">
+                        Fourrier vs. Viscous regimes simulated on graphite devices. Figure SF. 1 taken from "Viscous heat backflow and temperature resonances in extreme thermal conductors" (Jan Dragašević, Bogdan Rajkov, and Michele Simoncelli) <a href="https://arxiv.org/pdf/2303.12777" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline; transition: color 0.3s ease;">here</a>.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>

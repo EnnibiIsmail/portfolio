@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basov Lab | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <div class="brand"><a href="../index.html">ISMAIL ENNIBI</a></div>
+            <div class="nav-links">
+                <a href="../index.html">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">Basov Lab</h1>
+            <p class="hero-subtitle">Hardware and computational optimizations for nanoscale spectroscopy.</p>
+        </header>
+
+        <div class="hero-image-box">
+            <img src="../media/basov.png" alt="Basov Lab Setup">
+        </div>
+
+        <div class="meta-grid">
+            <div><span class="meta-label">Role</span><span class="meta-value">Research Engineer</span></div>
+            <div><span class="meta-label">Lab</span><span class="meta-value">Basov Lab</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Optics, Computational Imaging</span></div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">01. Overcoming Integration Bottlenecks</div>
+            <div class="section-text">
+                <p>In the Basov Laboratory, the excitation field for a given sample is not always known. Measuring the field enhanced by a sample allows for a direct study of material properties, such as dispersion. However, Near-Field (NF) measurements often suffer from long integration times due to extremely low photon levels.</p>
+                <p>To solve this, I approached the problem from two distinct angles: engineering a highly tunable physical monochromator, and developing a compressed sensing algorithm to drastically reduce the required data acquisition time.</p>
+            </div>
+        </section>
+
+        <div class="hardware-box">
+            <div>
+                <img src="../media/monoc_p1.jpg" alt="Custom Monochromator Setup on Optical Breadboard" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">02. Custom Monochromator</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Detailed measurements with high spectral resolution traditionally demand lengthy acquisition times. To introduce flexibility, I designed a compact monochromator system utilizing a diffraction grating and an adjustable slit.
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Built entirely on a 10x12-inch optical breadboard, this custom configuration disperses light linearly and allows researchers to tune the resolution from 1 nm/mm up to 10 nm/mm. This enables rapid preliminary scans while preserving the ability to conduct ultra-fine measurements when needed.
+                </p>
+                <a href="../media/Monochromator_parts_oder-2.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline; font-size: 0.9rem; transition: color 0.3s ease; display: inline-block; margin-bottom: 1.5rem;">
+                    Read the full mathematical and design write-up &rarr;
+                </a>
+                <br>
+                <span class="hardware-tag">Resolution: 1 to 10 nm/mm</span>
+                <span class="hardware-tag">Footprint: 10x12 inches</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="flex-direction: row-reverse;">
+            <div>
+                <figure style="margin: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; background-color: white; padding: 1.5rem; box-sizing: border-box; aspect-ratio: 4/3;">
+                    <img src="../media/cs_p1.png" alt="Compressed Sensing Mathematical Expression" style="width: 100%; height: auto; object-fit: contain;">
+                    <figcaption style="margin-top: 1rem; font-size: 0.75rem; color: #333; font-family: var(--sans); line-height: 1.4; text-align: center;">
+                        <strong>Figure 1.</strong> Mathematical formulation of the Compressed Sensing reconstruction process, transforming sparse sampled data into a high-resolution output.
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">03. Compressed Sensing (CS)</h3>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    To computationally bypass physical integration limits, I developed a sensing method inspired by data compression protocols. By transforming the visual information into a different mathematical basis where the data is sparse, we can drop a vast majority of the coefficients without a sensible loss in image quality.
+                </p>
+                <p class="section-text" style="margin-bottom: 1.5rem;">
+                    Compressed Sensing reverses this logic: by sampling less data initially (forming the measurement matrix), we can reconstruct the full system by solving a system of equations in the transformed space. I successfully implemented a binomial sampling matrix on a Fourier basis, and am currently refining the reconstruction process to yield even higher resolution imaging.
+                </p>
+                <span class="hardware-tag">Binomial Sampling</span>
+                <span class="hardware-tag">Fourier Basis</span>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>

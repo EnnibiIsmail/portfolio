@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetron Sputterer | Ismail Ennibi</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="fade-in" id="top">
+    <div class="page-wrapper container">
+        
+        <nav class="main-nav">
+            <a href="../index.html" class="back-link">← Back to Portfolio</a>
+            <div class="nav-links">
+                <a href="../index.html" class="active">My Work</a>
+                <a href="../about.html">About</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <header class="project-hero">
+            <h1 class="hero-title">DC Magnetron Sputterer</h1>
+            <p class="hero-subtitle">Thin-film deposition hardware for open-source hacker fabs.</p>
+        </header>
+
+        <div style="margin-bottom: 4rem; width: 100%; background-color: var(--bg-surface); aspect-ratio: 14 / 9;" class="hero-image-box">
+            <img src="../media/MS_p10.png" alt="Vacuum Chamber" class="center-fit" style="display: block; width: 100%; height: auto; object-fit: contain;">
+        </div>
+
+        <div class="meta-grid">
+            <div><span class="meta-label">Role</span><span class="meta-value">R&D Engineer</span></div>
+            <div><span class="meta-label">Collaborators</span><span class="meta-value">MIT Hacker Fab</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Vacuum Systems, Deposition</span></div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">01. Hacker Fab Expansion</div>
+            <div class="section-text">
+                <p>As part of an initiative to empower materials engineering through accessible tools, I traveled to MIT as part of a team helping to establish the MIT hacker fab.</p>
+                <p>There, I assisted in establishing several pieces of critical infrastructure, including a maskless lithography machine, a spin coater, and a DC magnetron sputterer for thin-film physical vapor deposition.</p>
+            </div>
+        </section>
+
+        <div class="hardware-box" style="background-color: transparent; padding: 0; gap: 4rem; margin-bottom: 6rem;">
+            <div style="flex: 1;">
+                <div class="section-title" style="margin-bottom: 1.5rem; grid-column: span 1;">02. Magnetron Assembly</div>
+                <div class="section-text">
+                    <p style="margin-bottom: 1.5rem;">Sputtering requires stripping argon atoms of their electrons to create a plasma, which then bombards a metal target to eject atoms onto a substrate. To make this efficient at lower pressures, we utilized a magnetron configuration.</p>
+                    <p>By arranging strong permanent magnets behind the deposition target, the magnetic field traps free electrons in a localized path near the target surface. This dramatically increases the probability of ionizing the argon gas, yielding a dense, highly localized plasma ring.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <span class="hardware-tag">Plasma Physics</span>
+                    <span class="hardware-tag">Magnetic Containment</span>
+                </div>
+            </div>
+            <div style="flex: 1; background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="../media/MS_p1.png" alt="Magnetron Head Assembly" style="width: 100%; height: auto; object-fit: contain; margin-bottom: 1rem;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); text-align: center;">Cathode & Magnet Layout</span>
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div style="background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                <img src="../media/MS_p3.png" alt="Argon Plasma Ignition" style="width: 100%; aspect-ratio: 2/3; object-fit: cover; margin-bottom: 1rem;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted);">Sputterer Assembly</span>
+            </div>
+            <div style="background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                <img src="../media/MS_p5.jpg" alt="Vacuum & High Voltage Systems" style="width: 100%; aspect-ratio: 2/3; object-fit: cover; margin-bottom: 1rem;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted);">Vacuum Integration</span>
+            </div>
+        </div>
+
+        <div class="hardware-box" style="background-color: transparent; padding: 0; gap: 4rem; margin-bottom: 6rem; flex-direction: row-reverse;">
+            <div style="flex: 1;">
+                <div class="section-title" style="margin-bottom: 1.5rem; grid-column: span 1;">03. Simulation & Analysis</div>
+                <div class="section-text">
+                    <p style="margin-bottom: 1.5rem;">To evaluate and optimize the magnetron's performance prior to testing, finite element magnetic simulations and particle tracing models were implemented.</p>
+                    <p>By analyzing the magnetic field topologies, we were able to predict electron trapping efficiency and tune the target erosion profiles for improved deposition uniformity.</p>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <span class="hardware-tag">FEA Simulation</span>
+                    <span class="hardware-tag">Particle Tracing</span>
+                </div>
+            </div>
+            <div style="flex: 1; background-color: var(--bg-surface); padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="../media/MS_p7.gif" alt="Magnetic Field Analysis" style="width: 100%; height: auto; object-fit: contain; margin-bottom: 1rem; background-color: white;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); text-align: center;">Magnetic Field Analysis</span>
+            </div>
+        </div>
+
+        <section class="content-section">
+            <div class="section-title">04. Thin-Film Deposition</div>
+            <div class="section-text">
+                <p>The ultimate goal of this system is to lay down nanometer-thick films of metals (like copper or aluminum) onto silicon wafers, serving as the conductive layers for DIY semiconductor devices.</p>
+                <p>Building this required integrating a high-vacuum pumping system (typically a roughing pump paired with a turbomolecular pump), a regulated mass flow controller for the argon gas, and a high-voltage DC power supply capable of sustaining the plasma discharge safely.</p>
+            </div>
+        </section>
+        <div class="back-to-top-container">
+            <a href="#top" class="back-to-top">
+                Back to Top &uarr;
+            </a>
+        </div>
+
+    </div> </body>
+    </div>
+</body>
+</html>
