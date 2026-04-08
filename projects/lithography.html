@@ -21,7 +21,7 @@
 
         <header class="project-hero">
             <h1 class="hero-title">Cost-Efficient Photolithography</h1>
-            <p class="hero-subtitle">Opto-mechanical engineering and dynamic autofocus for maker-scale microfabrication.</p>
+            <p class="hero-subtitle">Opto-mechanical engineering and structural analysis for maker-scale microfabrication.</p>
         </header>
 
         <div class="hero-image-box">
@@ -31,20 +31,20 @@
         <div class="meta-grid">
             <div><span class="meta-label">Role</span><span class="meta-value">Mechanical Engineering Lead</span></div>
             <div><span class="meta-label">Project</span><span class="meta-value">ME/EE Senior Design (2025/26)</span></div>
-            <div><span class="meta-label">Focus</span><span class="meta-value">Opto-Mechanics, Autofocus</span></div>
+            <div><span class="meta-label">Focus</span><span class="meta-value">Opto-Mechanics, FEA</span></div>
         </div>
 
         <section class="content-section">
             <div class="section-title">01. Open-Source Nanofabrication</div>
             <div class="section-text">
                 <p>For my Senior Design capstone, my team and I are developing a cost-efficient photolithography system. The primary objective is to build a university- and maker-scale lithography machine that pushes the performance boundaries of current DIY builds while remaining open-source and reproducible.</p>
-                <p>As the mechanical lead, my work focuses primarily on designing the rigid mechanical components, integrating the complex optical assembly, and engineering the dynamic autofocus mechanism required to achieve sub-micron resolution.</p>
+                <p>As the mechanical lead, my work focuses primarily on designing the rigid mechanical components, integrating the complex optical assembly, and validating the structural integrity of the system through Finite Element Analysis (FEA) to ensure sub-micron resolution.</p>
             </div>
         </section>
 
         <div class="hardware-box">
             <div>
-                    <img src="../media/litho_p2.png" alt="Custom Laser Mounts CAD" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+                <img src="../media/litho_p2.png" alt="Custom Laser Mounts CAD" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
             </div>
             <div>
                 <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">02. Custom Opto-Mechanics</h3>
@@ -61,7 +61,7 @@
 
         <div class="hardware-box" style="flex-direction: row-reverse;">
             <div>
-                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=1000" alt="Optiland Ray Simulation" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+                <img src="../media/litho_optics.png" alt="Optiland Ray Simulation" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
             </div>
             <div>
                 <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">03. The Optical Assembly</h3>
@@ -78,27 +78,27 @@
 
         <div class="hardware-box" style="margin-top: 4rem;">
             <div>
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000" alt="Voice Coil Motor Integration" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3;">
+                <img src="../media/litho_fea.png" alt="Finite Element Analysis of Laser Mounts" class="contain-img" style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 2.5/3;">
             </div>
             <div>
-                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">04. Dynamic Autofocus System</h3>
+                <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1rem;">04. FEA & Thermal Expansion Analysis</h3>
                 <p class="section-text" style="margin-bottom: 1.5rem;">
-                    To account for microscopic wafer unevenness during scanning, I engineered a dynamic autofocus mechanism. The system incorporates a camera feed analyzed by a Raspberry Pi using computer vision to continuously assess beam sharpness.
+                    Because sub-micron patterning requires the UV and red alignment lasers to remain perfectly co-linear, opto-mechanical stability over long exposure cycles is paramount. I utilized Finite Element Analysis (FEA) specifically on our custom laser mounts to evaluate mechanical deflection under standard operational loads.
                 </p>
                 <p class="section-text" style="margin-bottom: 1.5rem;">
-                    This software loop triggers a Voice Coil Motor (VCM) that physically translates the objective lens. By mechanically actuating the optics in real-time, the system locks in a sharp focus across the entire substrate, which we systematically quantify using a 1951 USAF resolution test chart.
+                    Beyond static structural limits, the FEA modeled the effects of thermal expansion on the optical alignment. By simulating the thermal gradients generated by the environment and the components themselves, I iteratively optimized the mount geometries and material thicknesses to minimize thermally-induced focal drift, guaranteeing strict alignment tolerances.
                 </p>
-                <span class="hardware-tag">Feedback Control</span>
-                <span class="hardware-tag">Computer Vision</span>
+                <span class="hardware-tag">Finite Element Analysis</span>
+                <span class="hardware-tag">Thermal-Structural Simulation</span>
             </div>
         </div>
+
         <div class="back-to-top-container">
             <a href="#top" class="back-to-top">
                 Back to Top &uarr;
             </a>
         </div>
 
-    </div> </body>
     </div>
 </body>
 </html>
